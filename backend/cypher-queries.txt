@@ -1,0 +1,34 @@
+// set levels:
+
+MATCH path=(root:User)-[:REFERRED_BY*0..]->(child:User)
+WHERE NOT ()-[:REFERRED_BY]->(root)
+WITH child, length(path) AS level
+SET child.level = level
+
+
+
+set different colors: 
+
+MATCH (n:User)
+WITH n, n.level AS level
+CALL apoc.do.case([
+  level = 1, 'SET n.color = "red"',
+  level = 2, 'SET n.color = "blue"',
+  level = 3, 'SET n.color = "green"'
+],
+'DEFAULT', {n:n})
+YIELD value
+RETURN value
+
+
+
+return apoc version
+
+RETURN apoc.version()
+
+(install from releases page github)
+
+
+DISPLAY UNLIMITED NODES
+
+:config initialNodeDisplay: 1000

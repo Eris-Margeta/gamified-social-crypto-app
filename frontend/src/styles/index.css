@@ -1,0 +1,15 @@
+
+.alert-visible {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .alert-hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out ;
+  }
+  
+.bodymain { 
+  min-width: 0;
+}
+

@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ClosedDoorsOverlay.css */
+.door-parts-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.zoom-effect {
+  animation: scaleUp 5s forwards;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(3);
+  }
+}
+
+
+/* HomePage.css */
+/* .fade-in-form {
+  animation: fadeInForm 1s ease-out forwards;
+}
+
+@keyframes fadeInForm {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+*/
+
+
+
+/* buttons sliding animations on actions page */
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.slide-out {
+  animation: slideOutLeft 0.5s forwards;
+}
+
+.slide-in {
+  animation: slideInRight 0.5s forwards;
+}
+
+
+
+/* button bg custom*/
+.button-with-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+
+  filter: 'brightness(25%)';
+  z-index: -1;
+}
+
+.button-with-background {
+  position: relative;
+  display: inline-block;
+  width: 100%; 
+  text-align: center;
+  z-index: 1;
+}
+
+/* Flickering glowslo */
+@keyframes glowslo {
+  0%, 100% {
+    box-shadow: 
+      0 0 5px rgba(255, 165, 0, 0.75), 
+      0 0 10px rgba(255, 165, 0, 0.5), 
+      0 0 15px rgba(255, 165, 0, 0.25);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    box-shadow: 
+      0 0 20px rgba(255, 165, 0, 1), 
+      0 0 40px rgba(255, 165, 0, 0.75), 
+      0 0 60px rgba(255, 165, 0, 0.5);
+  }
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+.alert-dialog {
+  z-index: 210 !important;
+}
+
+.alert-dialog-two {
+  z-index: 200 !important;
+}
+
+
+
+/* rgb glow magiclink copy box */
+
+.rgb-glow {
+  border: solid 2px transparent;
+  background: linear-gradient(white, white) padding-box, 
+              linear-gradient(to right, red, purple, blue) border-box;
+  box-shadow: 0 0 8px 2px red, 
+              0 0 8px 2px blue, 
+              0 0 8px 2px green, 
+              0 0 8px 2px purple;
+  animation: rgb-glow-animation 2s infinite alternate;
+}
+
+@keyframes rgb-glow-animation {
+  from {
+    box-shadow: 0 0 5px 2px red, 
+                0 0 5px 2px blue, 
+                0 0 5px 2px green, 
+                0 0 5px 2px purple;
+  }
+  to {
+    box-shadow: 0 0 15px 2px red, 
+                0 0 15px 2px blue, 
+                0 0 15px 2px green, 
+                0 0 15px 2px purple;
+  }
+}

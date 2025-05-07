@@ -1,0 +1,11 @@
+curl -X POST http://localhost:5001/api/authorize \
+-H "Authorization: Bearer de9b80151989d0c4c2cf36b78b35e72a" \
+-H "Content-Type: application/json" \
+-d '{"sessionID":"ded84590bc06b85dc789a03e821a3b3c%253Acdf78480c156e83645e26afd2d2d6c35%3AJgjFX7"}'
+
+
+
+curl -X POST http://localhost:5001/api/authorize \
+-H "Authorization: Bearer de9b80151989d0c4c2cf36b78b35e72a" \
+-H "Content-Type: application/json" \
+-d '{"sessionID":"78c201b6de6d664b23875464d6fe0046%253A4ad89cbb52a9964100fe23c8d01ca7eca5489ecd39b757ce65ba4594336973d5%3AX8xbbr"}'

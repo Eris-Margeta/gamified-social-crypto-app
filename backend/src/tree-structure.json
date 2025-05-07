@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "referrer": "no referrer",
+    "newUser": "eris2@gmail.com",
+    "children": [
+      {
+        "id": 2,
+        "referrer": "eris2@gmail.com",
+        "newUser": "mail2@mail.com",
+        "children": [
+          {
+            "id": 4,
+            "referrer": "mail2@mail.com",
+            "newUser": "mail3@maik.com",
+            "children": []
+          },
+          {
+            "id": 5,
+            "referrer": "mail2@mail.com",
+            "newUser": "mail4@mail.com",
+            "children": [
+              {
+                "id": 7,
+                "referrer": "mail4@mail.com",
+                "newUser": "covjek12@gmail.com",
+                "children": [
+                  {
+                    "id": 8,
+                    "referrer": "covjek12@gmail.com",
+                    "newUser": "nekicovjek14@gmail.com",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "referrer": "mail2@mail.com",
+            "newUser": "user14@gmail.com",
+            "children": []
+          },
+          {
+            "id": 9,
+            "referrer": "mail2@mail.com",
+            "newUser": "nekicovjek15@gmail.com",
+            "children": [
+              {
+                "id": 10,
+                "referrer": "nekicovjek15@gmail.com",
+                "newUser": "covjek16@gmailcom.com",
+                "children": []
+              },
+              {
+                "id": 11,
+                "referrer": "nekicovjek15@gmail.com",
+                "newUser": "covjek17@gmailcom.com",
+                "children": []
+              },
+              {
+                "id": 12,
+                "referrer": "nekicovjek15@gmail.com",
+                "newUser": "covjek127@gmailcom.com",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "referrer": "no referrer",
+    "newUser": "eris4@gmial.com",
+    "children": [
+      {
+        "id": 14,
+        "referrer": "eris4@gmial.com",
+        "newUser": "user555@gmail.com",
+        "children": []
+      },
+      {
+        "id": 15,
+        "referrer": "eris4@gmial.com",
+        "newUser": "user215@gmail.com",
+        "children": []
+      }
+    ]
+  }
+]

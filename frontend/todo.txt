@@ -1,0 +1,4 @@
+Add a request in /verify page that sends out request to server with SessionID from URL to see if it's a real sessionID and if yes, sets a cookie sessionID 
+
+Add error handling with local storage if the sessionID is not correct and use the error msgs in session storage hook or whatever
+

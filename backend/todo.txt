@@ -1,0 +1,54 @@
+add clearing endpoints 
+/process-data/clear 
+and
+/api/referrer/clear
+
+Create an auth endpoint returning 200 and setting a http only server side cookie for a session ID that is correct 
+
+
+Read this for neo4j:
+
+https://neo4j.com/download-thanks/?edition=community&release=5.16.0&flavour=rpm&_ga=2.244921601.565019241.1707294675-2007639192.1707294674&_gl=1*1390liw*_ga*MjAwNzYzOTE5Mi4xNzA3Mjk0Njc0*_ga_DL38Q8KGQC*MTcwNzI5NDY3Mi4xLjEuMTcwNzI5NzYxNi4wLjAuMA..
+
+
+
+Default login is username 'neo4j' and password 'neo4j' (full installation instructions below)
+
+username neo4j, pass: 12345678
+Neo4j local setup:
+
+
+  
+Open up your terminal/shell.
+Extract the contents of the archive, using:
+tar -xf <filecode>.
+For example,
+tar -xf neo4j-community-5.16.0-unix.tar.gz
+Place the extracted files in a permanent home on your server. The top level directory is referred to as NEO4J_HOME.
+To accept the eval license:
+<NEO4J_HOME>/bin/neo4j-admin server license --accept-evaluation
+To run Neo4j as a console application, use:
+<NEO4J_HOME>/bin/neo4j console
+To run Neo4j in a background process, use:
+<NEO4J_HOME>/bin/neo4j start
+For additional commands see the Unix tarball installation documentation.
+Visit http://localhost:7474 in your web browser.
+Connect using the username 'neo4j' with default password 'neo4j'. You'll then be prompted to change the password.
+
+
+
+Control db by:
+
+Via Cypher Shell:
+
+Access the Cypher Shell by navigating to your Neo4j installation directory in the terminal and running:
+bash
+Copy code
+neo4j/bin/cypher-shell
+neo4j/bin/neo4j start
+
+
+mailersend production api token:
+
+mlsn.2abad312ef9f56216571869467d43c2a149c4c151aabf443ffb61f31d4cb3b9b
+
