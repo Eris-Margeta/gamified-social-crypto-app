@@ -1,19 +1,24 @@
 # Viral loop midnight crypto app 
 
-A magical and immersive experience with sounds, animations and trippy visuals.
+Originally made for the midnight project: https://midnightapes.com/
+
+Currently not deployed; requires a back end.
+
+A magical and immersive experience with sounds, animations and trippy visuals. It's a gamified social sharing experience designed to earn points towards a crypto project.
+
+Features:
+-wallet connect 
+-paypangea integration, buy crypto within app 
+-calculating user scores based on their actions and chained referral system.
+-real-time back end data updates shown in the dashboard
+-basic code generator email auth coded from scratch
+-animations, sounds, and immersive trippy graphics and visuals
+-twitter api connection for counting social interactions
+-shad/cn components
+
+React + Vite + Tailwind + sqlite
 
 
-Share links and earn points
-Connect your wallet to earn whitelist privileges or redeem coins.
-
-
-
-React + Vite + Tailwind front end + sqlite back end 
-
-Basic email auth coded from scratch 
-
-WalletConnect 
-Twitter API connection
 
 Screens: 
 ![optimized](https://github.com/user-attachments/assets/5f8a5381-8b21-46b1-9a09-b622c2f86811)
